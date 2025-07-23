@@ -5,7 +5,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
   font-weight: normal;
 }
 
@@ -16,10 +15,14 @@
   font-style: normal;
 }
 
-body {
-  min-height: 100vh;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex; 
+  
   color: var(--text-default);
-  background: var(--background-background-default);
+  background: var(--Black-900, #151515);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -29,4 +32,81 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  justify-content: center; 
+  font-weight: normal;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+/*Styles Button*/
+.Primary-btn {
+  display: flex;
+  height: 30px;
+  padding: var(--border-radius-border-8, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: var(--border-radius-border-8, 8px);
+  background: var(--Background-Default-Dafault, #F8F8F8);
+  color: var(--Text-Default-Default-Button-Icon, #1C1C1C);
+
+  /* Text/S/Regular */
+  font-family: Figtree;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+}
+
+.Primary-btn:hover {
+  border-radius: var(--border-radius-border-8, 8px);
+  background: var(--background-default-dafault-hover, #EEE);
+}
+
+.Secondary-btn {
+  display: flex;
+  height: 32px;
+  padding: var(--border-radius-border-8, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-border-8, 8px);
+  border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
+  background: var(--Background-Default-Secondary, #323232);
+  color: var(--Text-Default-Dafault, #FDFDFD);
+
+  /* Text/S/Regular */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+}
+
+.Secondary-btn:hover {
+  border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
+  background: var(--background-default-secondary-hover, #5B5B5B);
+}
+
+.icon-btn {
+  display: inline-flex;
+  padding: 6px;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--border-radius-border-20, 20px);
+  border: 1px solid transparent;
+  background: none;
+}
+
+.icon-btn:hover {
+  border-radius: var(--border-radius-border-20, 20px);
+  border: 1px solid var(--Border-Default-Dafault, #323232);
+  background: var(--Background-Default-Tertiary, #2E2E2E);
 }
