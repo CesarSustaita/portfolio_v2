@@ -5,7 +5,7 @@
 <template>
   <main>
     <div class="container">
-      <h6>This is an Home page</h6>
+      <h6>Inspiration</h6>
     </div>
     
   </main>
