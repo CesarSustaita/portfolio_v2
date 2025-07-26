@@ -23,8 +23,8 @@ defineProps({
 
 .experience-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 16px;
   align-self: stretch;
   /* Text/M/Regular */
@@ -40,6 +40,7 @@ defineProps({
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  width: 390px;
 }
 
 .years {
@@ -56,4 +57,32 @@ defineProps({
   color: var(--Text-Default-Disabled, #A1A1A1);
   font-size: 14px;
 }
+
+
+@media (max-width: 590px) {
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  /* Text/M/Regular */
+  font-family: Figtree;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  border: 0px solid white;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+}
+
 </style>
