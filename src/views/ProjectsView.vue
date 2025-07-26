@@ -5,7 +5,7 @@
 <template>
   <main>
     <div class="container">
-      <h6>Porjectos</h6>
+      <h6>Projectos</h6>
     </div>
     
   </main>
