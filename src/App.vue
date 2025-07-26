@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import PortfolioStructure from './components/PortfolioStructure.vue'
+import TabsInformation from './components/TabsInformation.vue'
 
 </script>
 
@@ -10,6 +11,7 @@ import PortfolioStructure from './components/PortfolioStructure.vue'
     <div class="main-container">
       <HelloWorld msg="Porftolio V2" />
       <PortfolioStructure />
+      <TabsInformation />
       <!--<nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -49,7 +51,7 @@ import PortfolioStructure from './components/PortfolioStructure.vue'
   border: 0px solid var(--Border-Default-Dafault, #323232);
   background: var(--Background-Background-Dafault, #1C1C1C);
   margin: 0px;
-  padding: 24px;
+  padding: 16px;
   border: none;
   box-sizing: border-box;
 }
