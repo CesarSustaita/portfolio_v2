@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router'
         <RouterLink class=tab to="/MakingOf">Making of</RouterLink>
         <RouterLink class=tab to="/Inspiration">Inspiration</RouterLink>
 
-       
+
     </div>
 
 </template>
@@ -41,12 +41,14 @@ import { RouterLink } from 'vue-router'
 }
 
 .tab {
+    all: unset;
+    cursor: pointer;
     display: flex;
     padding: 12px;
     justify-content: center;
     align-items: center;
     gap: 6px;
-    text-decoration: none; 
+    text-decoration: none;
     outline: none;
 }
 
