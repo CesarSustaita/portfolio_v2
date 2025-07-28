@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router'
 }
 
 .router-link-active {
-  border-bottom: 1px solid var(--Text-Default-Dafault, #FDFDFD);
+  border-bottom: 1px solid var(--Text-Default-Dafault, #FDFDFD)!important;
   color: var(--Text-Default-Dafault, #FDFDFD)!important;
 }
 
