@@ -40,7 +40,7 @@ defineProps({
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  width: 100%;
+  width: 390px;
 }
 
 .years {
