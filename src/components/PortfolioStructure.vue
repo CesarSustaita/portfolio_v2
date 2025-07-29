@@ -1,33 +1,37 @@
 <script setup>
+import { ref } from 'vue'
+import CopyClipboard from './Structure/CopyClipboard.vue';
 
+const name = ref('César Sustaita')
+const position = ref('UX/UI Designer & Frontend Dev')
+const description = ref('Ingeniero que diseña experiencias UX/UI con visión de producto.')
+const experience = ref('3+ years experience')
 
 </script>
 
 <template>
- 
+
     <div class="portfolio">
         <div class="btn-access">
-            <button class="icon-btn">
-                <img src="/src/components/icons/IconsShare.svg" alt="Share" />
-            </button>
+          <CopyClipboard />
         </div>
         <div class="titles-image">
           <div class="titles">
-            <div class="name">César Sustaita</div>
-            <div class="position">UX/UI Designer & Frontend Dev</div>
+            <div class="name">{{name}}</div>
+            <div class="position">{{ position }}</div>
           </div>
           <div class="photo"><img src="/src/assets/picture/pic-portfolio.webp" alt="Me"></div>
         </div>
         <div class="description-views">
-          <div class="description">Ingeniero que diseña experiencias UX/UI con visión de producto.</div>
-          <div class="views">1000 views</div>
+          <div class="description">{{ description }}</div>
+          <div class="experience">{{ experience }}</div>
         </div>
         <div class="buttons">
             <button class="Primary-btn">Connect</button>
             <button class="Secondary-btn">Resume</button>
         </div>
     </div>
- 
+
 </template>
 
 <style scoped>
@@ -113,7 +117,7 @@
   line-height: 100%; /* 14px */
 }
 
-.views {
+.experience {
   color: var(--Text-Default-Description, #767676);
   /* Text/XS/Regular */
   font-family: Figtree;
@@ -131,7 +135,7 @@
 
 .Primary-btn,
 .Secondary-btn {
-  flex: 1; 
+  flex: 1;
 }
 
 @media (max-width: 590px) {
@@ -161,7 +165,7 @@
 
 .Primary-btn,
 .Secondary-btn {
-  flex: 1; 
+  flex: 1;
 }
 }
 

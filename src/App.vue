@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import PortfolioStructure from './components/PortfolioStructure.vue'
 import TabsInformation from './components/TabsInformation.vue'
 
@@ -12,12 +12,7 @@ import TabsInformation from './components/TabsInformation.vue'
       <HelloWorld msg="Porftolio V2" />
       <PortfolioStructure />
       <TabsInformation />
-      <!--<nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      -->
-        <RouterView />
+      <RouterView />
     </div>
   </header>
 
