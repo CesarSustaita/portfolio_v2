@@ -26,7 +26,7 @@ function copyLink() {
 </script>
 
 <template>
-    <button class="icon-btn" @click="copyLink">
+    <button class="tertiary-icon-btn" @click="copyLink">
       <img src="/src/components/icons/copy.svg" alt="Share" />
     </button>
     <div v-if="showTooltip" class="tooltip">Link copied</div>

@@ -18,7 +18,7 @@ defineProps({
         <div class="job">{{ jobPosition }}</div>
         <div class="description">{{ description }}</div>
       </div>
-        <a :href="link" class="Secondary-btn" target="link" rel="noopener noreferrer">
+        <a :href="link" class="Secondary-btn-small" target="link" rel="noopener noreferrer">
         <span>{{ btn }}</span>
           <img src="/src/components/icons/arrow-up-right.svg" alt="arrow-up-right" />
         </a>

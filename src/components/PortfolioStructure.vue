@@ -1,10 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 import CopyClipboard from './Structure/CopyClipboard.vue';
+import ConectionSection from './Structure/ConectionSection.vue';
 
 const name = ref('César Sustaita')
 const position = ref('UX/UI Designer & Frontend Dev')
-const description = ref('Ingeniero que diseña experiencias UX/UI con visión de producto.')
+const description = ref('Intelligent Systems Engineer 💻 who designs and develops functional UX/UI experiences 🎨 with product vision 🚀.')
 const experience = ref('3+ years experience')
 
 </script>
@@ -26,9 +27,8 @@ const experience = ref('3+ years experience')
           <div class="description">{{ description }}</div>
           <div class="experience">{{ experience }}</div>
         </div>
-        <div class="buttons">
-            <button class="Primary-btn">Connect</button>
-            <button class="Secondary-btn">Resume</button>
+        <div class="buttons-section">
+            <ConectionSection/>
         </div>
     </div>
 
@@ -114,7 +114,7 @@ const experience = ref('3+ years experience')
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 14px */
+  line-height: 120%; /* 14px */
 }
 
 .experience {
@@ -125,17 +125,6 @@ const experience = ref('3+ years experience')
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 12px */
-}
-
-.buttons{
-    display: flex;
-    gap: 20px;
-    align-self: stretch;
-}
-
-.Primary-btn,
-.Secondary-btn {
-  flex: 1;
 }
 
 @media (max-width: 590px) {
@@ -157,16 +146,6 @@ const experience = ref('3+ years experience')
   object-fit: cover;
 }
 
-.buttons{
-    display: flex;
-    gap: 12px;
-    align-self: stretch;
-}
-
-.Primary-btn,
-.Secondary-btn {
-  flex: 1;
-}
 }
 
 </style>

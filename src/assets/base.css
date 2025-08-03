@@ -9,11 +9,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.figtree-<uniquifier> {
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
 
 html, body {
   margin: 0;
@@ -43,19 +38,21 @@ body::-webkit-scrollbar {
 }
 
 
-/*Styles Button*/
+/*Styles Button Normal*/
 .Primary-btn {
   display: flex;
-  height: 30px;
+  height: 40px;
   padding: var(--border-radius-border-8, 8px);
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-shrink: 0;
   border: none;
   border-radius: var(--border-radius-border-8, 8px);
   background: var(--Background-Default-Dafault, #F8F8F8);
   color: var(--Text-Default-Default-Button-Icon, #1C1C1C);
+  cursor: pointer;
+  text-decoration: none;
 
   /* Text/S/Regular */
   font-family: Figtree;
@@ -68,20 +65,24 @@ body::-webkit-scrollbar {
 .Primary-btn:hover {
   border-radius: var(--border-radius-border-8, 8px);
   background: var(--background-default-dafault-hover, #EEE);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .Secondary-btn {
   display: flex;
-  height: 32px;
+  height: 40px;
   padding: var(--border-radius-border-8, 8px);
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-shrink: 0;
   border-radius: var(--border-radius-border-8, 8px);
   border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
   background: var(--Background-Default-Secondary, #323232);
   color: var(--Text-Default-Dafault, #FDFDFD);
+  cursor: pointer;
+  text-decoration: none;
 
   /* Text/S/Regular */
   font-size: 14px;
@@ -93,9 +94,119 @@ body::-webkit-scrollbar {
 .Secondary-btn:hover {
   border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
   background: var(--background-default-secondary-hover, #5B5B5B);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.icon-btn {
+.primary-icon-btn {
+  display: inline-flex;
+  padding: 6px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 32px;
+  width: 32px;
+  border-radius: var(--border-radius-border-20, 20px);
+  background: var(--Background-Default-Dafault, #F8F8F8);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primary-icon-btn:hover {
+  border-radius: var(--border-radius-border-20, 20px);
+  border-radius: var(--border-radius-border-20, 20px);
+  background: var(--background-default-dafault-hover, #c5c5c5);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tertiary-icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  padding: 6px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--border-radius-border-20, 20px);
+  border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tertiary-icon-btn:hover {
+  border-radius: var(--border-radius-border-20, 20px);
+  border: 1px solid var(--Border-Default-Dafault, #323232);
+  background: var(--Background-Default-Tertiary, #2E2E2E);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/*Styles Button Small*/
+.Primary-btn-small {
+  display: flex;
+  height: 30px;
+  padding: var(--border-radius-border-8, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: var(--border-radius-border-8, 8px);
+  background: var(--Background-Default-Dafault, #F8F8F8);
+  color: var(--Text-Default-Default-Button-Icon, #1C1C1C);
+  cursor: pointer;
+  text-decoration: none;
+
+  /* Text/S/Regular */
+  font-family: Figtree;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+}
+
+.Primary-btn-small:hover {
+  border-radius: var(--border-radius-border-8, 8px);
+  background: var(--background-default-dafault-hover, #c5c5c5);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Secondary-btn-small {
+  display: flex;
+  height: 32px;
+  padding: var(--border-radius-border-8, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-border-8, 8px);
+  border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
+  background: var(--Background-Default-Secondary, #323232);
+  color: var(--Text-Default-Dafault, #FDFDFD);
+  cursor: pointer;
+  text-decoration: none;
+
+  /* Text/S/Regular */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+}
+
+.Secondary-btn-small:hover {
+  border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
+  background: var(--background-default-secondary-hover, #5B5B5B);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.tertiary-icon-btn-small {
   display: inline-flex;
   padding: 6px;
   align-items: center;
@@ -103,10 +214,14 @@ body::-webkit-scrollbar {
   border-radius: var(--border-radius-border-20, 20px);
   border: 1px solid transparent;
   background: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.icon-btn:hover {
+.tertiary-icon-btn-small:hover {
   border-radius: var(--border-radius-border-20, 20px);
   border: 1px solid var(--Border-Default-Dafault, #323232);
   background: var(--Background-Default-Tertiary, #2E2E2E);
+  cursor: pointer;
+  text-decoration: none;
 }

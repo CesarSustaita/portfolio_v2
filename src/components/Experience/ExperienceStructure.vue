@@ -32,6 +32,7 @@ defineProps({
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 16px */
+
 }
 
 .data {
@@ -40,7 +41,7 @@ defineProps({
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  width: 390px;
+  width: 380px;
 }
 
 .years {
@@ -80,6 +81,7 @@ defineProps({
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  width: 100%;
 }
 
 }
