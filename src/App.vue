@@ -1,4 +1,5 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/vue';
 import { RouterView } from 'vue-router'
 import PortfolioStructure from './components/PortfolioStructure.vue'
 import TabsInformation from './components/TabsInformation.vue'
@@ -6,6 +7,7 @@ import TabsInformation from './components/TabsInformation.vue'
 </script>
 
 <template>
+  <Analytics />
   <header>
 
     <div class="main-container">
