@@ -12,11 +12,11 @@ const accordionContent = [
     content: 'This portfolio is designed using the CS UI Kit, one of my most recent personal projects. I used its components as a base to build this site, which helped me maintain visual consistency and speed up development.<br><br>Everything is coded from scratch in Vue 3 Framework, creating each component myself to have full control over design, functionality, and performance.<br><br>This approach has allowed me to align the design with my quality standards and ensure the portfolio is scalable and easy to maintain.',
 
   },
-  {
+  /*{
     title:'How I build my resume?',
     content: 'Falta este!',
 
-  },
+  },*/
   {
     title:'How do I work?',
     content: 'I enjoy combining design and frontend development to create experiences that not only work well but also feel intuitive and pleasant for users. I pay attention to every detail and aim to maintain a consistent aesthetic, building custom components that reflect my vision and style.<br><br>I like working with autonomy and responsibility, from idea to implementation, always eager to improve and learn. My focus goes beyond the interface: I’m interested in understanding how solutions impact users and the business, aiming for each product to deliver real and meaningful value.',

@@ -66,11 +66,10 @@ function toggleAccordion() {
   padding-right: 14px;
   padding-top: 8px;
   padding-bottom: 8px;
-  font-size: 14px;
   line-height: 1.4;
-  color: var(--Text-Default-Secondary, #d5d5d5);
+  color: var(--Text-Default-Secondary, #eaeaea);
   /* Text/M/Regular */
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -101,5 +100,24 @@ function toggleAccordion() {
   text-decoration: underline;
 }
 
+
+@media (max-width: 590px) {
+
+  .accordion-body {
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.4;
+  color: var(--Text-Default-Secondary, #eaeaea);
+  /* Text/M/Regular */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  border: 0px solid white;
+}
+
+}
 
 </style>

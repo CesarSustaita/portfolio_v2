@@ -3,6 +3,8 @@ import { ref } from 'vue'
 import ConnectModal from './ConnectModal.vue';
 
 const open = ref(false)
+const resume = 'https://drive.google.com/file/d/1ONbd6N7Cde6P7PIMt-fnpxIga4SBMq-x/view?usp=sharing'
+
 
 </script>
 
@@ -10,7 +12,14 @@ const open = ref(false)
 
   <div class="buttons">
     <button class="Primary-btn-small" @click="open = true">Connect</button>
-    <button class="Secondary-btn-small">Resume</button>
+    <a
+      class="Secondary-btn-small"
+      :href="resume"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Resume
+    </a>
   </div>
 
 <Teleport to="body">
