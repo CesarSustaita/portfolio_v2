@@ -7,36 +7,36 @@ const email = 'c.sustaita@outlook.com'
 const socialLinks = [
   {
     name: 'LinkedIn',
-    icon: './src/components/icons/linkedin.svg',
+    icon: new URL('@/components/icons/linkedin.svg', import.meta.url).href,
     link: 'https://www.linkedin.com/in/cesarsustaita/'
   },
   {
     name: 'Figma',
-    icon: './src/components/icons/figma.svg',
+    icon: new URL('@/components/icons/figma.svg', import.meta.url).href,
     link: 'https://www.figma.com/@cesarsustaita'
   },
   {
     name: 'Github',
-    icon: './src/components/icons/github.svg',
+    icon: new URL('@/components/icons/github.svg', import.meta.url).href,
     link: 'https://github.com/CesarSustaita'
   },
   {
     name: 'Instagram',
-    icon: './src/components/icons/ig.svg',
+    icon: new URL('@/components/icons/ig.svg', import.meta.url).href,
     link: 'https://www.instagram.com/c.sustaita_ux_ui/?hl=es-la'
   },
   {
     name: 'Threads',
-    icon: './src/components/icons/threas.svg',
+    icon: new URL('@/components/icons/threas.svg', import.meta.url).href,
     link: 'https://www.threads.com/@c.sustaita_ux_ui'
   },
   {
     name: 'X',
-    icon: './src/components/icons/X.svg',
+    icon: new URL('@/components/icons/X.svg', import.meta.url).href,
     link: 'https://x.com/SustaitaC_'
   }
-
 ];
+
 
 function openLink(url) {
   window.open(url, '_blank');
