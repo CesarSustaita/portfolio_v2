@@ -98,6 +98,30 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
+
+.Secondary-btn--disabled {
+  display: flex;
+  height: 40px;
+  padding: var(--border-radius-border-8, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Background-Default-Disabled, #767676);
+  cursor:default;
+  text-decoration: none;
+
+  color: var(--Text-Default-Disabled, #A1A1A1);
+  /* Text/S/Regular */
+  font-family: Figtree;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+}
+
+
 .primary-icon-btn {
   display: inline-flex;
   padding: 6px;
@@ -117,6 +141,29 @@ body::-webkit-scrollbar {
   border-radius: var(--border-radius-border-20, 20px);
   border-radius: var(--border-radius-border-20, 20px);
   background: var(--background-default-dafault-hover, #c5c5c5);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.secondary-icon-btn {
+  display: inline-flex;
+  padding: 6px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 32px;
+  width: 32px;
+  border-radius: var(--border-radius-border-20, 20px);
+  border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
+  background: var(--Background-Default-Secondary, #323232);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.secondary-icon-btn:hover {
+  border-radius: var(--border-radius-border-20, 20px);
+  border: 1px solid var(--Border-Default-Secondary, #5B5B5B);
+  background: var(--background-default-secondary-hover, #5B5B5B);
   cursor: pointer;
   text-decoration: none;
 }

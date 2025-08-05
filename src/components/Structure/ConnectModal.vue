@@ -82,10 +82,7 @@ function copyEmail() {
       <div class="social-name">{{ item.name }}</div>
     </div>
     <div class="social-btn">
-      <button
-        class="primary-icon-btn"
-        @click="openLink(item.link)"
-      >
+      <button class="primary-icon-btn" @click="openLink(item.link)">
         <img src="/src/components/icons/arrow-up-right-dark.svg" alt="Open" />
       </button>
     </div>
@@ -154,6 +151,12 @@ function copyEmail() {
 .social-img {
   width: 32px;
   height: 32px;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
 .tooltip {

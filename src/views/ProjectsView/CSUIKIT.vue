@@ -52,7 +52,6 @@ function goBack() {
   border: 1px solid var(--Border-Default-Dafault, #323232);
   background: var(--Background-Background-Dafault, #1C1C1C);
   padding: 24px;
-  margin: 36px;
   animation: fadeInUp 0.3s ease-out;
 }
 

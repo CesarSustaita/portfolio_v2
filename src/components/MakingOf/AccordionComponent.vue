@@ -68,12 +68,12 @@ function toggleAccordion() {
   padding-bottom: 8px;
   font-size: 14px;
   line-height: 1.4;
-  color: var(--Text-Default-Secondary, #EEE);
+  color: var(--Text-Default-Secondary, #d5d5d5);
   /* Text/M/Regular */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%; 
+  line-height: 130%;
   border: 0px solid white;
 }
 

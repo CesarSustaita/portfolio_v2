@@ -11,8 +11,8 @@ const Projects = [
   {
     img: new URL('@/components/Project/Card-Img/uaslpuikit.svg', import.meta.url).href,
     CardTitle: 'UASLP UI Kit & Web Components',
-    CardSubtitle: 'Componente base de marca personal…',
-    to: '/cs-ui-kit'
+    CardSubtitle: 'Case study: A UI Kit for engineering students at UASLP.',
+    to: '/uaslp-ui-kit'
   },
   {
     img: new URL('@/components/Project/Card-Img/etn.svg', import.meta.url).href,

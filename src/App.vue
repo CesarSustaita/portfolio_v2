@@ -25,7 +25,7 @@ import TabsInformation from './components/TabsInformation.vue'
   display: flex;
   flex-direction: column;
   width: 590px;
-  border-radius: var(--border-radius-border-12, 12px) var(--border-radius-border-12, 12px) 0px 0px;
+  border-radius: var(--border-radius-border-12, 12px);
   border: 1px solid var(--Border-Default-Dafault, #323232);
   background: var(--Background-Background-Dafault, #1C1C1C);
   margin: 36px;

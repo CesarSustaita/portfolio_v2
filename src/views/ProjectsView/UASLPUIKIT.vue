@@ -1,6 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import ETN from '@/data/case-studies/etn-design.vue'
+import UASLPUIKIT from '@/data/case-studies/uaslp-uikit.vue'
 
 const router = useRouter()
 
@@ -22,7 +22,7 @@ function goBack() {
       </div>
 
       <div class="data">
-        <ETN/>
+        <UASLPUIKIT/>
       </div>
 
     </div>

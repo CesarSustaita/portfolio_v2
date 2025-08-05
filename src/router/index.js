@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ProjectsView from '../views/ProjectsView.vue'
 import CSUIKIT from '@/views/ProjectsView/CSUIKIT.vue'
 import ETN from '@/views/ProjectsView/ETN.vue'
+import UASLPUIKIT from '@/views/ProjectsView/UASLPUIKIT.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +31,11 @@ const router = createRouter({
     path: '/cs-ui-kit',
     name: 'CSUIKit',
     component: CSUIKIT
+    },
+    {
+    path: '/uaslp-ui-kit',
+    name: 'UASLPUIKIT',
+    component: UASLPUIKIT
     },
     {
     path: '/etn-design',

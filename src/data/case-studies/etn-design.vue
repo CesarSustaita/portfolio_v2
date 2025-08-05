@@ -8,8 +8,9 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
   <div class="data">
 
   <h2><strong>Experience Redesign: Improving the Ticket Purchase Flow in the ETN App</strong></h2>
-    <div class="img"> <img src="@/components/Project/Card-Img/etn.svg"/></div>
+  <div class="img"> <img src="@/components/Project/Card-Img/etn.svg"/></div>
 
+  <h2><strong>Summary</strong></h2>
   <p>
     This is a conceptual case study that started from a personal need as a frequent user of the ETN bus app. Even though the app works, I noticed a big opportunity to improve the purchase process: the selected date and time were not always visible, creating confusion and risk of mistakes.
   </p>
@@ -17,8 +18,8 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
     This project focused on redesigning that flow to keep the key travel information always visible. The goal was to increase user confidence and make the buying process faster and more comfortable.
   </p>
   <p><strong>My Role:</strong> UX/UI Designer (Personal Project)<br>
-     <strong>Tools:</strong> Figma<br>
-     <strong>Duration:</strong> 2 weeks</p>
+     <strong>Tools:</strong> Figma, Pinterest<br>
+     <strong>Duration:</strong> 1 week</p>
 
   <h2><strong>1. The Problem: Uncertainty in a Key Step</strong></h2>
   <p>
@@ -27,6 +28,9 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
   <p>
     This forced me to go back and double-check or try to remember them, which added mental effort and made me feel unsure — especially before paying. A small mistake could mean buying a ticket for the wrong date or time.
   </p>
+
+    <div class="imgs"> <img src="@/components/Project/Card-Img/Etn/screenshots-before.svg"/></div>
+    <p><em>1.1 - Before the redesign, the information needed to get a ticket was unclear and disorganized.</em></p>
 
   <h3><strong>Hypothesis and Goals</strong></h3>
   <p>
@@ -53,7 +57,11 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
   <p>
     I documented the steps in the current ETN app to find the exact moment when the travel details disappear and how that affects the experience.
   </p>
-  <p><em>[Insert here a simple diagram or screenshot showing where the issue happens in the original ETN app flow]</em></p>
+    <div class="imgs"> <img src="@/components/Project/Card-Img/Etn/screenshots-before-1.svg"/></div>
+    <p><em>2.1 - To get a ticket, the user types a destination, picks a date and time, and views the options.</em></p>
+
+    <div class="imgs"> <img src="@/components/Project/Card-Img/Etn/screenshots-before-2.svg"/></div>
+    <p><em>2.2 - After selecting a trip, the system shows details and available seats before payment.</em></p>
 
   <h2><strong>3. Design Process and Solution</strong></h2>
   <p>Because the problem was clear from my experience and supported by the research, I chose a direct design approach.</p>
@@ -73,7 +81,12 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
     <li><strong>Visual integration:</strong> I designed the component to look natural inside the existing screens — useful but not distracting.</li>
     <li><strong>Consistent components:</strong> I used the same colors and styles throughout to keep everything cohesive and professional.</li>
   </ul>
-  <p><em>[Insert your final redesign screenshots here. A “before and after” view works great.]</em></p>
+
+    <div class="imgs"> <img src="@/components/Project/Card-Img/Etn/screenshots-after-1.svg"/></div>
+    <p><em>3.1 - The system gets the destination and travel date, then displays tickets and times at the top of the screen.</em></p>
+
+    <div class="imgs"> <img src="@/components/Project/Card-Img/Etn/screenshots-after-2.svg"/></div>
+    <p><em>3.2 - The system shows ticket and bus descriptions before the seat is selected, while main travel info remains at the top section.</em></p>
 
   <h2><strong>4. The Proposed Solution</strong></h2>
   <p>
@@ -82,6 +95,9 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
   <p>
     This small but meaningful change improves the experience, going from something confusing to something that inspires confidence.
   </p>
+
+    <div class="imgs"> <img src="@/components/Project/Card-Img/Etn/screenshots-after.svg"/></div>
+    <p><em>4.1 - Showing trip info at all times helps users feel secure and avoid mistakes while buying a ticket.</em></p>
 
   <h2><strong>5. Results and Learnings</strong></h2>
 
@@ -121,15 +137,13 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
 <style scoped>
 
 .data {
-  color: var(--Text-Default-Dafault, #FDFDFD);
-  margin-bottom: 60px;
-  font-family: Figtree;
-  font-size: 15px;
+  color: var(--Text-Default-Dafault, #e8e8e8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
-.h2 {
+.data strong {
   font-weight: bold;
-
 }
 
 
@@ -155,12 +169,52 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
   display: block;
 }
 
+.imgs {
+  border-radius: var(--border-radius-border-8, 8px);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  object-position:center;
+  display: block;
+}
+
 .btns {
   margin-top: 48px;
   margin-bottom: 48px;
   display: flex;
   flex-direction: row-reverse;
   gap: 12px;
+}
+
+@media (max-width: 590px) {
+
+.data {
+  color: var(--Text-Default-Dafault, #e8e8e8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  object-position:center;
+  display: block;
+}
+
+
 }
 
 </style>
