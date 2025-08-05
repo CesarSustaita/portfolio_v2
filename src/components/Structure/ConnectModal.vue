@@ -7,32 +7,32 @@ const email = 'c.sustaita@outlook.com'
 const socialLinks = [
   {
     name: 'LinkedIn',
-    icon: '/src/components/icons/linkedin.svg',
+    icon: './src/components/icons/linkedin.svg',
     link: 'https://www.linkedin.com/in/cesarsustaita/'
   },
   {
     name: 'Figma',
-    icon: '/src/components/icons/figma.svg',
+    icon: './src/components/icons/figma.svg',
     link: 'https://www.figma.com/@cesarsustaita'
   },
   {
     name: 'Github',
-    icon: '/src/components/icons/github.svg',
+    icon: './src/components/icons/github.svg',
     link: 'https://github.com/CesarSustaita'
   },
   {
     name: 'Instagram',
-    icon: '/src/components/icons/ig.svg',
+    icon: './src/components/icons/ig.svg',
     link: 'https://www.instagram.com/c.sustaita_ux_ui/?hl=es-la'
   },
   {
     name: 'Threads',
-    icon: '/src/components/icons/threas.svg',
+    icon: './src/components/icons/threas.svg',
     link: 'https://www.threads.com/@c.sustaita_ux_ui'
   },
   {
     name: 'X',
-    icon: '/src/components/icons/X.svg',
+    icon: './src/components/icons/X.svg',
     link: 'https://x.com/SustaitaC_'
   }
 
