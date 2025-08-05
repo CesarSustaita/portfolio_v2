@@ -54,10 +54,18 @@ import { RouterLink } from 'vue-router'
 
 .tab:visited,
 .tab:active,
-.tab:hover,
 .tab:focus {
   color: var(--text-default-tab-inactive, #5B5B5B);
   text-decoration: none;
   outline: none;
 }
+
+.tab:hover {
+  border-bottom: 1px solid var(--Text-Default-Dafault, #FDFDFD)!important;
+  color: var(--Text-Default-Dafault, #FDFDFD)!important;
+  text-decoration: none;
+  outline: none;
+}
+
+
 </style>
