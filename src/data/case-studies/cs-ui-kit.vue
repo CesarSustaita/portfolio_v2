@@ -121,7 +121,7 @@ const community = 'https://www.figma.com/community/file/1533559101752781449/cs-u
 
   <div class="btns">
       <a :href="figmaLink" class="Primary-btn" target="link" rel="noopener noreferrer">
-        <img src="/src/components/icons/Figma24.svg" alt="arrow-up-right" />
+        <img src="/src/components/icons/figma24.svg" alt="arrow-up-right" />
         <p>Go to Figma</p>
 
       </a>

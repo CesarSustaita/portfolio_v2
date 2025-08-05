@@ -121,7 +121,7 @@ const community = 'https://www.instagram.com/p/DCKjSiSTqiE/?igsh=b3EyNmxpZjQxZHp
 
   <div class="btns">
       <a :href="figmaLink" class="Primary-btn" target="link" rel="noopener noreferrer">
-        <img src="/src/components/icons/Figma24.svg" alt="arrow-up-right" />
+        <img src="/src/components/icons/figma24.svg" alt="arrow-up-right" />
         <p>Go to Figma</p>
 
       </a>
