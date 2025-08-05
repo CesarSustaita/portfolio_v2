@@ -4,7 +4,7 @@ import AccordionComponent from '@/components/MakingOf/AccordionComponent.vue';
 const accordionContent = [
   {
     title:'How did this portfolio come about?',
-    content: 'This portfolio version 2.0 was created to clearly and visually showcase the projects I have worked on, combining design and frontend development. I felt it was time to refresh it and better align it with how I work and think today.<br><br>It is designed so that anyone who visits — recruiter, colleague, or client — can get to know my work, understand my process, and contact me more easily.<br><br>If you are curious about the previous version, you can see it <a href="https://www.cesarsustaita.com/" target="_blank" rel="noopener noreferrer"><strong>here</strong></a>.',
+    content: 'This portfolio version 2.0 was created to clearly and visually showcase the projects I have worked on, combining design and frontend development. I felt it was time to refresh it and better align it with how I work and think today.<br><br>It is designed so that anyone who visits — recruiter, colleague, or client — can get to know my work, understand my process, and contact me more easily.<br><br>If you are curious about the previous version, you can see it <a href="https://portfolio-seven-nu-10.vercel.app/" target="_blank" rel="noopener noreferrer"><strong>here</strong></a>.',
 
   },
   {
