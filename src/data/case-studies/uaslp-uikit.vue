@@ -15,10 +15,19 @@ const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uasl
             </p>
         </div>
 
-        <p class="role-info">
-            <strong>My Role:</strong> UX/UI Designer, Design System Architect (Personal/Thesis Project)<br>
-            <strong>Tools:</strong> Figma
-        </p>
+        <div class="imgs"> <img src="@/components/Project/Card-Img/uaslpuikit/description2.svg"/></div>
+        <div class="btns">
+        <a :href="figmaLink" class="Primary-btn" target="link" rel="noopener noreferrer">
+          <img src="/src/components/icons/Figma24.svg" alt="arrow-up-right" />
+          <p>Go to Figma</p>
+
+        </a>
+        <a  class="Secondary-btn--disabled" target="link" rel="noopener noreferrer">
+          <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/geography--v1.png" alt="geography--v1"/>
+          <span>Go to the Documentation</span>
+
+        </a>
+      </div>
 
         <h2>1. The Problem: Engineering Talent vs. The Design Challenge</h2>
         <p>
@@ -132,6 +141,7 @@ const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uasl
   color: var(--Text-Default-Dafault, #e8e8e8);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 180%;
 }
 
 .data strong {
@@ -181,8 +191,8 @@ const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uasl
 }
 
 .btns {
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: row-reverse;
   gap: 12px;

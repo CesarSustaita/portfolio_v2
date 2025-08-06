@@ -13,9 +13,20 @@ const community = 'https://www.figma.com/community/file/1533559101752781449/cs-u
     <p>
       CS UI Kit (César Sustaita UI Kit) is a user interface kit created to speed up interface design and maintain visual consistency from the start. It was born from the need to standardize my workflow and eliminate repetitive tasks like defining styles and components from scratch in every project. Originally designed for personal use, this kit is now publicly available on Figma for anyone looking to create interfaces faster and more efficiently.
     </p>
-    <p><strong>My Role:</strong> Product Designer<br />
-    <strong>Tools:</strong> Figma<br />
-    <strong>Duration:</strong> 3 weeks, ongoing development</p>
+    <div class="imgs"> <img src="@/components/Project/Card-Img/csuikit/description.svg"/></div>
+
+    <div class="btns">
+      <a :href="figmaLink" class="Primary-btn" target="link" rel="noopener noreferrer">
+        <img src="/src/components/icons/Figma24.svg" alt="arrow-up-right" />
+        <p>Go to Figma</p>
+
+      </a>
+      <a :href="community" class="Secondary-btn" target="link" rel="noopener noreferrer">
+        <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/geography--v1.png" alt="geography--v1"/>
+        <span>Visit the figma community</span>
+
+      </a>
+    </div>
 
     <h3><strong>The problem</strong></h3>
     <p>
@@ -119,7 +130,7 @@ const community = 'https://www.figma.com/community/file/1533559101752781449/cs-u
 
   </div>
 
-  <div class="btns">
+    <div class="btns">
       <a :href="figmaLink" class="Primary-btn" target="link" rel="noopener noreferrer">
         <img src="/src/components/icons/Figma24.svg" alt="arrow-up-right" />
         <p>Go to Figma</p>
@@ -139,6 +150,7 @@ const community = 'https://www.figma.com/community/file/1533559101752781449/cs-u
   color: var(--Text-Default-Dafault, #e8e8e8);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 180%;
 }
 
 .data strong {
@@ -173,7 +185,6 @@ const community = 'https://www.figma.com/community/file/1533559101752781449/cs-u
   display: flex;
   width: 100%;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -189,8 +200,8 @@ const community = 'https://www.figma.com/community/file/1533559101752781449/cs-u
 }
 
 .btns {
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: row-reverse;
   gap: 12px;
