@@ -1,5 +1,6 @@
 <script setup>
-const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uaslp-ui-kit'
+const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uaslp-ui-kit';
+const UiKit = 'https://uaslp-ui-kit-doc.vercel.app/';
 
 </script>
 
@@ -22,9 +23,9 @@ const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uasl
           <p>Go to Figma</p>
 
         </a>
-        <a  class="Secondary-btn--disabled" target="link" rel="noopener noreferrer">
+        <a :href="UiKit" class="Secondary-btn" target="link" rel="noopener noreferrer">
           <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/geography--v1.png" alt="geography--v1"/>
-          <span>Go to the Documentation</span>
+          <span>UASLP UI Kit Documentation</span>
 
         </a>
       </div>
@@ -126,9 +127,9 @@ const figmaLink = 'https://www.figma.com/community/file/1516891092600893832/uasl
         <p>Go to Figma</p>
 
       </a>
-      <a  class="Secondary-btn--disabled" target="link" rel="noopener noreferrer">
+      <a :href="UiKit" class="Secondary-btn" target="link" rel="noopener noreferrer">
         <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/geography--v1.png" alt="geography--v1"/>
-        <span>Go to the Documentation</span>
+        <span>UASLP UI Kit Documentation</span>
 
       </a>
   </div>
